@@ -1,3 +1,11 @@
+# Compilation mode, support OS-specific options
+# nuitka-project-if: {OS} in ("Windows", "Linux", "Darwin", "FreeBSD"):
+#    nuitka-project: --onefile
+# nuitka-project-else:
+#    nuitka-project: --mode=standalonealone
+# nuitka-project: --windows-console-mode=disable
+# nuitka-project: --include-package-data=psutil
+
 import psutil
 import os
 import urllib.request
