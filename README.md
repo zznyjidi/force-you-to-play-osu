@@ -9,11 +9,11 @@ Payload version is the underlaying program that installs osu! and detect if it i
 
 ## How to Remove
 
-If you used any of the helper/script to install, all the files will be saved to your user's home directory, just kill payload.exe in task manager and remove the payload files.
+If you used any of the helper/script to install, all the files will be saved to your user's home directory, just kill payload.exe in task manager and remove the payload files. (Some files may not be there)
+- payload.zip
 - payload.exe
 - payload.build
 - payload.onefile-build
 - payload.dist
-- payload.zip
 
 And If osu! is installed with the payload, there will be a install.exe at the same folder. It is the installer for osu!lazer. 
